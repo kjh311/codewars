@@ -32,10 +32,10 @@ while(currentPosition1 > currentPosition2){
 }
 var hours = seconds / 216000;
 var minutes = (hours % 1) * 60;
-var finalSeconds = minutes % 1 * 60;
+var finalSeconds = (minutes % 1) * 60;
 
 if(finalSeconds > 59.5){
-  minutes += minutes + 1;
+  minutes = minutes + 1;
   finalSeconds = 0;
 }
 
