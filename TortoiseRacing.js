@@ -12,3 +12,35 @@
 // race(80, 91, 37) => [3, 21, 49]
 // Note: you can see some other examples in "Your test cases".
 
+function race(v1, v2, g) {
+
+var velocity1InSeconds = v1 / 216000;
+var velocity2InSeconds = v2 / 216000;
+var currentPosition1 = g;
+var currentPosition2 = 0;
+var seconds = 0;
+var newArray = [];
+
+if(v1 >= v2){
+  return(null);
+}
+
+while(currentPosition1 > currentPosition2){
+  currentPosition1 += velocity1InSeconds;
+  currentPosition2 += velocity2InSeconds;
+  seconds ++;
+}
+var hours = seconds / 216000;
+var minutes = (hours % 1) * 60;
+var finalSeconds = minutes % 1 * 60;
+
+if(finalSeconds > 59.5){
+  minutes += minutes + 1;
+  finalSeconds = 0;
+}
+
+newArray.push(Math.floor(hours), Math.floor(minutes), Math.floor(finalSeconds));
+return(newArray);
+}
+
+race(80, 100, 40);
