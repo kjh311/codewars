@@ -8,6 +8,8 @@
 
 // For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
 
+
+// NOT WORKING 100%
 function disemvowel(str) {
   var splitString = str.split("");
   // console.log(splitString);
