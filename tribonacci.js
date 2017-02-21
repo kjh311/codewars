@@ -14,6 +14,7 @@
 
 // Signature will always contain 3 numbers; n will always be a non-negative number; if n==0, then return an empty array and be ready for anything else which is not clearly specified ;)
 
+
 function tribonacci(signature,n){
 
   var finalArray = [];
