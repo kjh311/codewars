@@ -1,9 +1,6 @@
 function reverseWords(str) {
   
   let secondArray = [];
-function reverseWords(str) {
-  
-  let secondArray = [];
   let finalArray = [];
   let tempArray = [];
   let x;
@@ -23,15 +20,13 @@ function reverseWords(str) {
       finalArray.unshift(x)
       tempArray = [];
     }
-
   }
 
 finalArray = finalArray.join(" ");
   return finalArray;
-
 }
 
-reverseWords('The quick brown fox jumps over the lazy dog.');
+// reverseWords('The quick brown fox jumps over the lazy dog.');
 // 'ehT kciuq nworb xof spmuj revo eht yzal .god');
     
     // reverseWords('apple');
@@ -40,6 +35,6 @@ reverseWords('The quick brown fox jumps over the lazy dog.');
     // reverseWords('a b c d');
     // 'a b c d');
     
-    // reverseWords('double  spaced  words');
+    reverseWords('double  spaced  words');
     // 'elbuod  decaps  sdrow');
  
